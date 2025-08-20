@@ -21,7 +21,7 @@ jobs:
         uses: Actions/checkout@v4
 
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-crendetials@v4
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ secrets.AWS_REGION }}
